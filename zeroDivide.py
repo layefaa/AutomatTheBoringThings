@@ -1,10 +1,12 @@
 def spam(divideBy):
-    try:
-        return 42 / divideBy
-    except ZeroDivisionError:
-        print("Error: Cannot divide by zero")
+    return 42 / divideBy
 
-print(spam(0))
-print(spam(1))
-print(spam(2))
-print(spam(12))
+try:
+    print(spam(0))
+    print(spam(1))
+    print(spam(2))
+    print(spam(12))
+except ZeroDivisionError:
+    print("Can't divide by zero!")
+
+
