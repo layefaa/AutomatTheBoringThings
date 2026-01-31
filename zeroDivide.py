@@ -1,3 +1,4 @@
+
 def spam(divideBy):
     return 42 / divideBy
 
@@ -8,5 +9,4 @@ try:
     print(spam(12))
 except ZeroDivisionError:
     print("Can't divide by zero!")
-
 
